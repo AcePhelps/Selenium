@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Master test suite">
+<suite name="Master test suite" >
     <test name ="Selenium test" >
         <classes>
-            <class name="pageObjectTest.BaseTest">
+            <class name="pageObjectTest.MainPageTest">
                 <methods>
+                    <include name="openWebPage">
 
+                    </include>
+
+                </methods>
+            </class>
+                    <class name="pageObjectTest.BigPageWithManyElementsTest">
+                      <methods>
+                          <include name="OpenThePage"/>
+                          <include name="SectionToFollowSocailMedia_redirectToTwitter"/>
+                          <include name="SectionToFollowSocailMedia_redirectToFacebook"/>
+                          <include name="SectionOfRandomStuff_InputDataInTheField_Successfully"/>
+                          <include name="SectionOfRandomStuff_InputDataInTheField_WithError"/>
+                          <include name="LoginFieldWithIncorrectCredentials_ThrowingAnError"/>
+                          <include name="GetLatestPosts_EnterIncorrectEmail_NotSubscibed"/>
+                      </methods>
+                    </class>
+            <class name="pageObjectTest.FakeLandingTest">
+                <methods>
+                    <include name="OpenFakeLandingPage"/>
+                    <include name="FakeLandingPage_VeiwCoursesButton_Presents"/>
+                    <include name="FakeLandingPage_VeiwAllCoursesButton_Presents"/>
+                    <include name="FakeLandingPage_WebDevelopmentSection_Presents"/>
+                    <include name="FakeLandingPage_JavascriptSection_Presents"/>
+                    <include name="FakeLandingPage_PythonSection_Presents"/>
+                    <include name="FakeLandingPage_HtmlAndCssSection_Presents"/>
+                    <include name="FakeLandingPage_UxDesignSection_Presents"/>
+                    <include name="FakeLandingPage_IntroToCodingSection_Presents"/>
+                    <include name="FakeLandingPage_DataBaseDesignSection_Presents"/>
+                    <include name="FakeLandingPage_AppAndGamesSection_Presents"/>
+                    <include name="FakeLandingPage_SecondViewAllCoursesButton_Presents"/>
+                    <include name="FakeLandingPage_ContactUsButton_Presents"/>
                 </methods>
             </class>
 

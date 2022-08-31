@@ -23,20 +23,25 @@ public class BrowserFabric {
     private static WebDriver getEdgeDriver(){
         ChromeOptions options = new ChromeOptions();
         WebDriverManager.edgedriver().setup();
+        options.addArguments("headless");
 
         return new EdgeDriver();
     }
     private static WebDriver getChromeDriver(){
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--width=1400");
-        options.addArguments("--height=1000");
         WebDriverManager.chromedriver().setup();
-        return new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--headless");
+
+
+        return new ChromeDriver(options);
     }
+
     private static WebDriver getFirefoxDriver(){
         FirefoxOptions options= new FirefoxOptions();
         options.addArguments("--width=1400");
         options.addArguments("--height=1000");
+        options.addArguments("headless");
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
     }
