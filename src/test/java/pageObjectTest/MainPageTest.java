@@ -13,12 +13,12 @@ import java.util.Locale;
 public class MainPageTest extends BaseTest {
 
 
-   @Test
-    public void openWebPage()  {
-      MainPage mainPage = new MainPage(driver);
-      mainPage.open(url);
+    @Test
+    public void openWebPage() {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.open(url);
 
 
-   }
+    }
 
 }
