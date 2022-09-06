@@ -15,7 +15,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_VeiwCoursesButton_Presents() throws InterruptedException {
+    public void FakeLandingPage_VeiwCoursesButton_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.VisibilityofElement(locators.ViewCourseButton());
@@ -23,7 +23,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_VeiwAllCoursesButton_Presents() throws InterruptedException {
+    public void FakeLandingPage_VeiwAllCoursesButton_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.ViewAllCourseButton());
@@ -32,7 +32,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_WebDevelopmentSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_WebDevelopmentSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.WebDevelopment1());
@@ -41,7 +41,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_JavascriptSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_JavascriptSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.JavaScript1());
@@ -50,7 +50,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_PythonSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_PythonSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.Python1());
@@ -59,7 +59,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_HtmlAndCssSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_HtmlAndCssSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.HtmlAndCss1());
@@ -68,7 +68,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_UxDesignSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_UxDesignSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.UxDesign1());
@@ -77,7 +77,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_IntroToCodingSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_IntroToCodingSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.IntroToCoding1());
@@ -86,7 +86,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_DataBaseDesignSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_DataBaseDesignSection_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.DataBaseDesign1());
@@ -95,7 +95,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_AppAndGamesSection_Presents() throws InterruptedException {
+    public void FakeLandingPage_AppAndGamesSection_Presents() {
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.AppsAndGames1());
@@ -104,7 +104,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_SecondViewAllCoursesButton_Presents() throws InterruptedException {
+    public void FakeLandingPage_SecondViewAllCoursesButton_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.SecondViewAllCoursesButton1());
@@ -113,7 +113,7 @@ public class FakeLandingTest extends BaseTest {
     }
 
     @Test
-    public void FakeLandingPage_ContactUsButton_Presents() throws InterruptedException {
+    public void FakeLandingPage_ContactUsButton_Presents(){
         FakeLandingPage fakeLandingPage = new FakeLandingPage(driver);
         fakeLandingPage.isOpen();
         fakeLandingPage.ScrollDownToElement(locators.ContactUsButton1());

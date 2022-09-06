@@ -1,15 +1,12 @@
 package pageObject;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-
 public class locators extends BasePage {
-
 
     public locators(WebDriver driver) {
         super(driver);
@@ -104,7 +101,6 @@ public class locators extends BasePage {
     public static WebElement SubscribedSuccess() {
         return driver.findElement(By.xpath("(//*[@id='blog_subscription-2'])[1]/p"));
     }
-
     /////// Fake Landing Page
     public static WebElement ViewCoursesButton() {
         return driver.findElement(ViewCourseButton());
@@ -214,7 +210,6 @@ public class locators extends BasePage {
         return locator;
     }
 
-
     public static boolean isOpen() {
         By oraclePage = By.xpath("//*[@title='Download Java']");
         try {
@@ -225,6 +220,5 @@ public class locators extends BasePage {
         }
 
     }
-
 
 }

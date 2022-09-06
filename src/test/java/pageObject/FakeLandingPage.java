@@ -1,14 +1,8 @@
 package pageObject;
-
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.reporters.jq.Main;
-
-import static java.awt.SystemColor.window;
 
 public class FakeLandingPage extends BasePage {
-
 
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -16,20 +10,14 @@ public class FakeLandingPage extends BasePage {
         super(driver);
     }
 
-    public void isOpen() {
-        locators.FakeLandingPage().click();
+    public void isOpen() {locators.FakeLandingPage().click();}
 
+    public void VisibilityofElement(By locator) {wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void VisibilityofElement(By locator) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+    public void ScrollDownToElement(By element){
 
-    int i = 1000;
-
-    public void ScrollDownToElement(By element) throws InterruptedException {
-
-
+        int i = 1000;
         do {
             js.executeScript("window.scrollBy(0," + i + ")");
             i = i + 1000;
@@ -38,7 +26,6 @@ public class FakeLandingPage extends BasePage {
             }
 
         } while (isElementPresent(locators.ContactUsButton1()) != true);
-
 
     }
 
@@ -50,6 +37,5 @@ public class FakeLandingPage extends BasePage {
             return false;
         }
     }
-
 
 }
