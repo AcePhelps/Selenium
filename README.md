@@ -10,4 +10,4 @@ To run tests use Maven. (https://maven.apache.org/) Maven should be installed on
 Open cmd navigate to the Framework folder and write the command :
 mvn clean test
  ```diff
-+ Note:By default test will run on Chrome Browser
+ Note:By default test will run on Chrome Browser
