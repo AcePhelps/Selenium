@@ -5,10 +5,7 @@
         <classes>
             <class name="pageObjectTest.MainPageTest">
                 <methods>
-                    <include name="openWebPage">
-
-                    </include>
-
+                    <include name="openWebPage"></include>
                 </methods>
             </class>
                     <class name="pageObjectTest.BigPageWithManyElementsTest">
@@ -39,9 +36,6 @@
                     <include name="FakeLandingPage_ContactUsButton_Presents"/>
                 </methods>
             </class>
-
         </classes>
-
     </test>
-
 </suite>
