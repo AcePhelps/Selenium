@@ -28,7 +28,7 @@ public class BigPageWithManyElementsTest extends BaseTest {
         BigPageWithManyElements bigPageWithManyElements = new BigPageWithManyElements(driver);
         bigPageWithManyElements.open();
         bigPageWithManyElements.FacebookIcon();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@class='i85zmo3j alzwoclg jcxyg2ei dkyav5mx mw5ieb4x is65gj9g']")).isDisplayed());
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://www.facebook.com/Ultimateqa1/"));
     }
 
     @Test
