@@ -5,6 +5,7 @@ import helpers.BrowserFabric;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import pageObject.MainPage;
 
 public class BaseTest {
@@ -14,12 +15,15 @@ public class BaseTest {
     protected String passoword;
     protected String incorrectEmail;
 
+    @Parameters({"url","username","password"})
+
+
     @BeforeMethod
-    public void start() {
+    public void start(String url,String email,String passoword) {
         driver = BrowserFabric.getDriver(BrowserType.CHROME);
-        url = "https://ultimateqa.com/automation";
-        username = "Samznaesh@gmail.com";
-        passoword = "WhoKnowsThePassword";
+        this.url = url;
+        this.username =email;
+        this.passoword = passoword;
         incorrectEmail = "1234awsredqwfrdasd";
         MainPage mainPage = new MainPage(driver);
         mainPage.open(url);

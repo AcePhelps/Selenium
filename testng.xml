@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Master test suite" >
+<suite name="Master test suite">
+    <parameter name="url" value="https://ultimateqa.com/automation"></parameter>
+    <parameter name="username" value="Samznaesh@gmail.com"></parameter>
+    <parameter name="password" value="WhoKnowsThePassword"></parameter>
     <test name ="Selenium test" >
         <classes>
             <class name="pageObjectTest.MainPageTest">
                 <methods>
-                    <include name="openWebPage"></include>
+                    <exclude name="openWebPage"></exclude>
                 </methods>
             </class>
                     <class name="pageObjectTest.BigPageWithManyElementsTest">

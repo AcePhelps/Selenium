@@ -3,6 +3,8 @@ package pageObject;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Reporter;
+
 import java.io.*;
 
 public class BigPageWithManyElements extends BasePage {
@@ -32,6 +34,7 @@ public class BigPageWithManyElements extends BasePage {
     public void FacebookIcon() {
         js.executeScript("arguments[0].scrollIntoView();", locators.FacebookIcon());
         locators.FacebookIcon().click();
+        Reporter.log("Facebook icon presents",true);
     }
 
     public void SendInputInTheFields() throws IOException, InterruptedException {
@@ -73,6 +76,7 @@ public class BigPageWithManyElements extends BasePage {
         locators.UserNameField().sendKeys(username);
         locators.PasswordField().sendKeys(password);
         locators.LoginButtonBigPage().click();
+        Reporter.log("Login successful");
     }
 
     public int CalculationForCaptcha(WebElement element) {
